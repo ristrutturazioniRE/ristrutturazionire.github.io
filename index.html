@@ -43,7 +43,7 @@
           <li class="nav-item"><a href="#section-services" class="nav-link">Servizi</a></li>
           <li class="nav-item"><a href="#section-pricing" class="nav-link">Offerte</a></li>
           <li class="nav-item"><a href="#section-faq" class="nav-link">FAQ</a></li>
-         <!-- <li class="nav-item"><a href="#section-contact" class="nav-link">Contatti</a></li>-->
+          <li class="nav-item"><a href="#section-contact" class="nav-link">Contatti</a></li>
         </ul>
       </div>
     </div>
@@ -283,28 +283,32 @@
       <div class="container">
         <div class="row">
           <div class="col-md pr-md-5 mb-5">
-            
-            <form action="https://formspree.io/f/xzbobwjw" method="post" id="my-form" enctype="text/plain">
-              <div class="form-group">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" name="subject" class="form-control" id="name" placeholder="Nome">
-              </div>
-              <div class="form-group">
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" name="_replyto" class="form-control" id="email" placeholder="La tua email">
-              </div>
-              <div class="form-group">
-                <label for="message" class="sr-only">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+
+            <form
+            action="https://formspree.io/f/xzbobwjw"
+            method="POST"
+            id="my-form"
+          >
+          <div class="form-group">
+            <label class="form-cl">
+              <input type="email" name="_replyto" class="form-control" id="email" placeholder="La tua email">
+            </label>
+            </div>
+            <div class="form-group">
+            <label class="form-cl">
+              <textarea name="message" id="message" cols="30" rows="10" class="form-control"
                   placeholder="Scrivi il tuo messagio"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Invia messaggio">
-              </div>
-            </form>
-
-           
-
+            </label>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Invia messaggio">
+            </div>
+          </form>
+          <style>
+            .form-cl{
+              width: 100%;
+            }
+          </style>
           </div>
         </div>
       </div>
