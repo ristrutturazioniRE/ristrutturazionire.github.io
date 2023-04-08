@@ -1,0 +1,82 @@
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+.bg-image,
+.ftco-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ftco-cover {
+  background-position: center center;
+}
+
+.ftco-cover .ftco-heading {
+  font-size: 45px;
+  line-height: 1.34;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .ftco-cover .ftco-heading {
+    font-size: 37px;
+    line-height: 1.3;
+  }
+}
+
+.ftco-cover .ftco-subheading,
+.ftco-cover p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .ftco-cover .btn {
+    width: 100% !important;
+    border: 1px solid red;
+  }
+}
+
+.ftco-cover a {
+  position: relative;
+  color: #fff;
+}
+
+.ftco-cover a:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #4586FF;
+  height: 2px;
+  content: " ";
+}
+
+.ftco-cover.overlay {
+  position: fixed;
+}
+
+.ftco-cover.overlay:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.ftco-cover .ftco-vh-100 {
+  min-height: 100vh !important;
+}
+
+.container {
+  max-width: 960px;
+}
+
+section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
