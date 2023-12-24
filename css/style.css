@@ -1,0 +1,115 @@
+:root{
+  --bianco: #ffffff;
+  --blu: #4586FF;
+  --grigio: rgba( 255, 255, 255, 0.18 );
+  --border-out: 24px;
+  --border-in: 12px;
+  --blur-filter: 4px;
+  --section-padding-top: 100px;
+  --section-padding-bottom: 100px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.ftco-cover .ftco-heading {
+  font-size: 45px;
+  line-height: 1.34;
+  color: var(--bianco);
+}
+
+.header{
+  border-radius: var(--border-in);
+  backdrop-filter: blur( var(--blur-filter) );
+  -webkit-backdrop-filter: blur( var(--blur-filter) );
+  border: 1px solid var(--grigio);
+  padding: 15px;
+  -webkit-border-radius: var(--border-in);
+  -moz-border-radius: var(--border-in);
+  -ms-border-radius: var(--border-in);
+  -o-border-radius: var(--border-in);
+}
+
+.ftco-cover a:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--blu);
+  height: 2px;
+  content: " ";
+}
+
+.ftco-cover.overlay {
+  position: fixed;
+}
+
+.ftco-cover .ftco-vh-100 {
+  min-height: 90vh !important;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.img-container{
+  background-image: url(../images/pexels-max-rahubovskiy-6899350.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: -40px;
+  border-radius: var(--border-out);
+  -webkit-border-radius: var(--border-out);
+  -moz-border-radius: var(--border-out);
+  -ms-border-radius: var(--border-out);
+  -o-border-radius: var(--border-out);
+}
+
+section{
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+}
+
+.img-fluid{
+  border-radius: var(--border-out);
+  -webkit-border-radius: var(--border-out);
+  -moz-border-radius: var(--border-out);
+  -ms-border-radius: var(--border-out);
+  -o-border-radius: var(--border-out);
+}
+
+.map{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: invert(90%) hue-rotate(180deg);
+  border-radius: var(--border-out);
+  -webkit-border-radius: var(--border-out);
+  -moz-border-radius: var(--border-out);
+  -ms-border-radius: var(--border-out);
+  -o-border-radius: var(--border-out);
+}
+
+.content{
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .ftco-cover .ftco-heading {
+    font-size: 37px;
+    line-height: 1.3;
+  }
+  .ftco-cover .btn {
+    width: 100% !important;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .content{
+    display: block;
+  }
+}
